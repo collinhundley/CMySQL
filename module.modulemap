@@ -1,17 +1,13 @@
-module CMySQLLinux [system] {
-    header "/usr/include/mysql/mysql.h"
+module CMySQLMac [system] {
+    header "/usr/local/include/mysql/mysql.h"
+    header "/usr/local/include/mysql/errmsg.h"
     link "mysqlclient"
     export *
 }
 
-module CMariaDBLinux [system] {
-    header "/usr/include/mariadb/mysql.h"
-    link "mariadb"
-    export *
-}
-
 module CMySQLMac [system] {
-    header "/usr/local/include/mysql/mysql.h"
+    header "/usr/include/mysql/mysql.h"
+    header "/usr/include/mysql/errmsg.h"
     link "mysqlclient"
     export *
 }
